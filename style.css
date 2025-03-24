@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid .navbar-nav{
+    margin-left: 400px;
+}
+
+.container-fluid .navbar-nav .nav-link{
+    margin: 20px;
+    font-size: 16px;
+}
+.container-fluid{
+    position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+.container-fluid img{
+    margin-left: 70px;
+}
+.col h4{
+  margin-top: 30px;
+  margin-left: 240px;
+  font-size: 30px;
+}
+.col img{
+    margin-top: 20px;
+    margin-left: 380px;
+}
+.col p{
+    font-size: 17px;
+    margin-top: 30px;
+    margin-left: 170px;
+}
+.map button{
+    margin-top: 30px;
+    margin-left: 700px;
+    background-color: #0b3f72;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.map button:hover{
+    background-color: #f8f9fa;
+    color: #0b3f72;
+}
+.building{
+    margin-top: 20px;
+}
+.col .neo{
+    margin-top: 60px;
+    margin-left: 220px;
+}
+.col .headeing{
+    /* margin-top: -250px; */
+    margin-left: 220px;
+    font-size: 30px;
+}
+.col-3{
+    /* margin-top: 20px; */
+    /* margin-left: 100px; */
+    height: 200px;
+    width: 50px;
+}
+.col-3 img{
+    margin-top: 50px;
+    padding: 0px;
+    margin-left: 20px;
+    height: 80px;
+    width: 80px;
+}
+.col-3 p{
+    margin-top: 10px;
+    margin-left: 20px;
+   font-size: 13px;
+}
+.building button{
+    margin-top: 30px;
+    margin-left: 700px;
+    background-color: #0b3f72;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.building button:hover{
+    background-color: #f8f9fa;
+    color: #0b3f72;
+}
+.imges{
+    padding: 0px;
+}
+.col-4 img{
+    padding: 0px;
+}
+
+.hover-effect img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-effect img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+.floor .text h4{
+    margin-top: 60px;
+    margin-left: 240px;
+    font-size: 30px;
+     
+}
+.text img{
+    margin-top: -25px;
+    margin-left: 440px;
+}
+.floor .text .p1{
+    font-size: 17px;
+    margin-top: -10px;
+    margin-left: 240px;
+}
+.floor .text p{
+    font-size: 17px;
+    margin-top: -100px;
+    margin-left:830px;
+}
+.hall img{
+    margin: 0px;
+}
+.floor button{
+    margin-top: 30px;
+    margin-left: 700px;
+    background-color: #0b3f72;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.floor button:hover{
+    background-color: #f8f9fa;
+    color: #0b3f72;
+}
+ .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .table-card {
+    height: 350px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 1200px;
+  }
+
+  .headingdata, .datadata {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .headingdata p {
+    background-color: blueviolet;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  p {
+    margin: 0;
+    padding: 5px 0;
+  }
+
+
+.datadata button{
+    cursor: pointer;
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    /* height: 50px; */
+    width: 200px;  
+    margin-left: 90px;
+}  
+button:hover {
+    background-color: #f8f9fa;
+    color: #0b3f72;
+  }
+.plan h3{
+    margin-top: 50px;
+    margin-left: 700px;
+    font-size: 30px;
+    color: #0b3f72;
+}
+.plan img{
+    margin-top: 20px;
+    margin-left: 670px;
+}
+  .card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    height: 600px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    width: 500px;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .card button {
+    cursor: pointer;
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    /* height: 50px; */
+    width: 200px;  
+    margin-left: 142px;
+    margin-top: 70px;
+  }
+
+  .card button:hover {
+    background-color: #f8f9fa;
+    color: #0b3f72;
+  }
+.textimg {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.textimg .text{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    font-size: 30px;
+    font-weight: bolder;
+    transform: translate(-50%, -50%);
+}
+.textimg .textpar{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+}
+.textimg .textimg2{
+    /* height: 100px; */
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.textimg2 img{
+    height: 150px;
+}
+.textimg button{
+        margin-top: 30px;
+        margin-left: 45px;
+        background-color: #0b3f72;
+        border: 1px solid #f8f9fa;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+}
+.textimg button:hover{
+    background-color: #f8f9fa;
+    color: #0b3f72;
+}
+.logo img{
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 570px;
+}
+.d-flex .imges img{
+    height: 270px;
+}
+.container .img-fluid {
+    height: 150px;
+    width: 150px;
+    margin-left: -800px;
+}
+.text-section p{
+    margin-left: -480px;
+    width: 1100px;
+    font-size: 8px;
+    padding: 0;
+}
+.text-section .firstp{
+    font-size: 15px;
+}
+.fotp{
+    height: 90px;
+    background-color: #000000;
+    padding-top: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.sticky-footer-form {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+  }
+   .sticky-footer-form input::placeholder {
+    color: #0e0303; 
+  } 

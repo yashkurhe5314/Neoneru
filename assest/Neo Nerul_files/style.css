@@ -1,0 +1,469 @@
+body {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("fonts/FuturaStdBook.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "mont";
+  src: url("fonts/Montserrat-VariableFont_wght_0.ttf") format("truetype");
+}
+
+a {
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.heading {
+  font-family: "mont";
+  color: #2b3990;
+  font-size: 1.7dvw;
+  font-weight: 500;
+}
+.heading-alt {
+  font-family: "mont";
+  color: #547cbe;
+  font-size: 1.7dvw;
+  font-weight: 500;
+}
+.content {
+  font-family: "mont";
+  color: #4b4b4b;
+  font-size: 0.95dvw;
+}
+.content-table {
+  font-family: "mont";
+  color: #4b4b4b;
+  font-size: 1.1dvw;
+  font-weight: 500;
+}
+.content-i {
+  font-family: "mont";
+  color: #4b4b4b;
+  font-size: 0.8dvw;
+}
+
+.footer-text {
+  font-family: "mont";
+  color: #4b4b4b;
+  font-size: 0.8dvw;
+}
+
+.heading-mob {
+  font-family: "mont";
+  color: #2b3990;
+  font-size: 5dvw;
+  font-weight: 500;
+}
+.heading-alt-mob {
+  font-family: "mont";
+  color: #547cbe;
+  font-size: 5dvw;
+  font-weight: 500;
+}
+.content-mob {
+  font-family: "mont";
+  color: #4b4b4b;
+  font-size: 3dvw;
+}
+.content-table-mob {
+  font-family: "mont";
+  font-size: 3dvw;
+  font-weight: 500;
+}
+.content-i-mob {
+  font-family: "mont";
+  color: #4b4b4b;
+  font-size: 2.6dvw;
+}
+
+.footer-text-mob {
+  font-family: "mont";
+  color: #4b4b4b;
+  font-size: 2.3dvw;
+}
+
+/* Navbar styling */
+.navbar-item {
+  font-size: 1.1rem;
+  padding-inline: 1dvw;
+  text-decoration: none;
+  color: #2b3990;
+}
+
+.navbar {
+  background: white;
+  position: sticky;
+  padding-block: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Sidebar menu styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  right: -350px; /* Initially hidden */
+  width: 350px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s ease-in-out;
+  padding-top: 50px;
+  z-index: 1000;
+}
+.sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background: #f4f4f4;
+  color: #8b6439 !important;
+}
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 999;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+#hp-ctn-howItWorks img {
+  vertical-align: middle;
+}
+
+#hp-ctn-howItWorks {
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  margin: 0px;
+  width: 180px;
+  height: 40px;
+  margin-top: 200px;
+  background: #2b3990;
+  z-index: 15;
+  border-radius: 5px 5px 0px 0px;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform-origin: bottom right;
+  position: fixed;
+  right: 0px;
+  cursor: pointer;
+}
+
+#hp-ctn-howItWorks p {
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.curv {
+  border-radius: 10px;
+}
+
+hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.enquire {
+  font-family: "mont";
+  color: white;
+  background-color: #2b3990;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.enquire:hover {
+  background-color: #2b3990;
+  color: white;
+}
+
+.enquire:hover {
+  transform: scale(1.05);
+}
+
+.enquire-table {
+  font-family: "mont";
+  color: #2b3990;
+  background-color: #fff;
+  border-color: #2b3990 !important;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.enquire-table:hover {
+  transform: scale(1.05);
+}
+
+.backhome {
+  font-family: "futura";
+  color: white;
+  background-color: #2b3990;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.backhome:hover {
+  transform: scale(1.05);
+}
+
+.form-group {
+  padding-block: 10px;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid #8b6439;
+  border-radius: 0;
+  background: transparent;
+}
+.form-control:active,
+.form-control:focus {
+  background: transparent;
+  border-bottom: #547cbe 2px solid;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+.list-unstyled {
+  margin: 0px;
+}
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.fixed-footer-btns {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.fixed-footer-btns a:hover,
+.fixed-footer-btns a:focus,
+.fixed-footer-btns a:active {
+  width: 50%;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  background: #2b3990;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.fixed-footer-btns a {
+  width: 50%;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  background: #2b3990;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  text-align: center;
+  color: #fff !important;
+  font-size: 18px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #8b6439 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  opacity: 1 !important;
+  border: 1.5px #8b6439 solid;
+  display: inline-block !important;
+  width: 15px !important;
+  height: 15px !important;
+  max-width: 2.5dvw;
+  max-height: 2.5dvw;
+  margin-bottom: 2dvh !important;
+}
+.swiper-pagination {
+  position: relative;
+  top: 15px;
+}
+
+/* th {
+  font-weight: 400;
+  background-color: #8b6439 !important;
+  color: white !important;
+}
+tr {
+  border-color: #8b6439;
+} */
+
+form {
+  font-family: "futura" !important;
+}
+
+/* Sticky form */
+div.sticky {
+  outline: 0;
+  position: sticky;
+  color: white !important;
+  bottom: 0;
+  background-color: #2b3990;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 400 !important;
+  z-index: 999;
+}
+
+input.desktop-sticky-form {
+  outline: 0;
+  color: #fff;
+  background: none;
+  border-bottom: 1px solid #fff !important;
+  border: none;
+  display: inline-block;
+}
+
+/* div.sticky {
+  outline: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #000;
+  padding-top: 20px;
+  font-size: 16px;
+  z-index: 999;
+}
+.desktop-sticky-form {
+  display: inline-block;
+  padding: 0 5%;
+  width: 100%;
+} */
+table {
+  width: 100%;
+  table-layout: fixed;
+  overflow-wrap: break-word;
+}
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+}
+table th {
+  padding-left: 30px;
+}
+th {
+  text-align: center;
+  font-weight: normal;
+}
+.sticky .form-control {
+  border-color: white;
+}
+.sticky .form-control:focus {
+  border-color: #547cbe;
+}
+.sticky .form-control::placeholder {
+  color: white;
+}
+.sticky .form-control {
+  color: white;
+}
+
+.formbox {
+  /* border-radius: 50px; */
+  width: 23%;
+  margin: auto;
+  margin: 0px 10px;
+  display: inline-block;
+  background: transparent !important;
+}
+.formbox1 {
+  border-radius: 50px;
+  width: 23%;
+  margin: auto;
+  margin: 0px 10px;
+  display: inline-block;
+}
+.formbox3 {
+  border-radius: 50px;
+  width: 23%;
+  margin: auto;
+  margin: 0px 10px;
+  display: inline-block;
+}
+.formbox2 {
+  border-radius: 50px;
+  width: 50%;
+  margin: auto;
+  margin: 0px 10px;
+  display: inline-block;
+}
+.intl-tel-input.allow-dropdown {
+  width: 100%;
+}
+
+.desktop-sticky-form {
+  display: inline-block;
+  padding: 0 1%;
+}
+.btnsubmit {
+  border-radius: 50px;
+  padding: 2px 10px;
+  color: #2b3990 !important;
+  margin: auto;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: inline-block;
+  height: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* sticky form end */
+
+/* floor plan */
+#floorplan tr {
+  border-color: #547cbe;
+}
+
+#floorplan th {
+  background-color: #2b3990;
+  color: white;
+}
