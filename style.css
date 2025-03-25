@@ -341,3 +341,28 @@ button:hover {
    .sticky-footer-form input::placeholder {
     color: #0e0303; 
   } 
+ 
+  /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid .navbar-nav {
+  margin-left: auto; /* Center the navbar items */
+}
+
+.container-fluid .navbar-nav .nav-link {
+  margin: 10px; /* Adjust margin for smaller screens */
+  font-size: 16px;
+}
+
+.container-fluid {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.container-fluid img {
+  margin-left: auto; /* Center the logo */
+}
