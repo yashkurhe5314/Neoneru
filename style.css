@@ -366,3 +366,19 @@ button:hover {
 .container-fluid img {
   margin-left: auto; /* Center the logo */
 }
+
+.right-sticky-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1050;
+}
+
+.right-sticky-container .btn-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  border-radius: 8px 0 0 8px;
+  text-align: center;
+  padding: 12px 10px;
+}
